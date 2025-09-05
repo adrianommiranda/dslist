@@ -1,4 +1,4 @@
-package entities;
+package com.miranda.dslist.entities;
 
 import jakarta.persistence.*;
 
