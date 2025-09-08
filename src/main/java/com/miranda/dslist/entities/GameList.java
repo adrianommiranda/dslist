@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name ="tb_bame_list")
+@Table(name ="tb_game_list")
 public class GameList {
     private static final long serialVersionUID = 1L;
 
