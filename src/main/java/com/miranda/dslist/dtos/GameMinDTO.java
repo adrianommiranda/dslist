@@ -1,6 +1,7 @@
 package com.miranda.dslist.dtos;
 
 import com.miranda.dslist.entities.Game;
+import com.miranda.dslist.projections.GameminProjection;
 import jakarta.persistence.Column;
 
 public class GameMinDTO {
@@ -20,6 +21,14 @@ public class GameMinDTO {
         year = entity.getYear();
         imgUml = entity.getImgUml();
         shortDescription = entity.getShortDescription();
+    }
+
+    public GameMinDTO(GameminProjection projection){
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUml = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     //Vou gerar apenas os get, como é uma resumido(resposta)
